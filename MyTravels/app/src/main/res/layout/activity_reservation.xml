@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/padding_30"
+    tools:context=".ReservationActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/form_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameOfHotel"
+                android:textSize="@dimen/text_size_25"
+                android:text="@string/name_of_hotel"
+                android:layout_marginBottom="@dimen/padding_30"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameOfHotel"
+                android:layout_marginEnd="@dimen/padding_10"
+                android:id="@+id/pricePerNight"
+                android:layout_marginBottom="@dimen/padding_5"
+                android:textSize="@dimen/text_size_20"
+                android:text="@string/price"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameOfHotel"
+                android:layout_toEndOf="@+id/pricePerNight"
+                android:layout_marginBottom="@dimen/padding_5"
+                android:id="@+id/pricePerNightString"
+                android:textSize="@dimen/text_size_20"
+                android:text="@string/euro_per_night"/>
+
+            <TextView
+                android:id="@+id/firstDateSelected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_5"
+                android:textSize="@dimen/text_size_20"
+                android:layout_below="@+id/pricePerNight"
+                android:text="@string/begin_date"/>
+
+            <TextView
+                android:id="@+id/secondDateSelected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_5"
+                android:textSize="@dimen/text_size_20"
+                android:layout_below="@+id/firstDateSelected"
+                android:text="@string/end_date"/>
+
+            <TextView
+                android:id="@+id/finalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/secondDateSelected"
+                android:textSize="@dimen/text_size_20"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/padding_30"
+                android:text="@string/final_price"/>
+
+            <Button
+                android:id="@+id/reservationBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/finalPrice"
+                android:text="@string/calculate_price"/>
+            <Button
+                android:id="@+id/finalBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reservationBtn"
+                android:text="@string/make_a_reservation"/>
+
+            <CheckBox
+                android:id="@+id/simpleCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/finalBtn"
+                android:layout_marginTop="@dimen/padding_5"
+                android:text="@string/i_ve_read_the_terms_and_conditions" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

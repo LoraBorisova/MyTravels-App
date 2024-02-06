@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/padding_10"
+    tools:context=".ProductActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/form_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPagerProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewPagerProduct"
+                android:text="@string/excellent_9_5"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_25"
+                android:paddingBottom="@dimen/padding_10"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rating"
+                android:text="@string/hotel_paris_louis_blanc"
+                android:textSize="@dimen/text_size_25" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:text="@string/_700"
+                android:layout_marginEnd="@dimen/padding_10"
+                android:textSize="@dimen/text_size_22"
+                android:paddingBottom="@dimen/padding_10"/>
+
+            <TextView
+                android:id="@+id/Euro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_toEndOf="@+id/price"
+                android:textSize="@dimen/text_size_22"
+                android:text="@string/euro" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/price"
+                android:text="@string/description"
+                android:textSize="@dimen/text_size_19"
+                android:paddingBottom="@dimen/padding_10"/>
+
+            <TextView
+                android:id="@+id/desc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc"
+                android:text="@string/benefits"
+                android:textSize="@dimen/text_size_19"
+                android:paddingBottom="@dimen/padding_10"/>
+
+            <TextView
+                android:id="@+id/room"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/desc1"
+                android:text="@string/room_type"
+                android:textSize="@dimen/text_size_22"
+                android:textStyle="italic"
+                android:paddingBottom="@dimen/padding_10"/>
+
+
+            <Button
+                android:id="@+id/reservation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/room"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:text="@string/make_reservation"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

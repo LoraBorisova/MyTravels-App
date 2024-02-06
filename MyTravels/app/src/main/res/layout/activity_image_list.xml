@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:padding="@dimen/padding_20">
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:src="@drawable/ic_paris" />
+
+    <RelativeLayout
+        android:id="@+id/box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="dakggke" />
+
+
+        <TextView
+            android:id="@+id/Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5"
+            android:layout_below="@+id/textView1"
+            android:layout_marginStart="@dimen/padding_5"
+            android:layout_marginEnd="@dimen/padding_5"
+            android:text="dakggke"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/Euro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_toEndOf="@+id/Price"
+            android:layout_marginTop="@dimen/padding_5"
+            android:text="@string/euro"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

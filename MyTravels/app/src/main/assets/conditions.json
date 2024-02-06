@@ -1,0 +1,29 @@
+{
+  "conditions": [
+    {
+      "id": "1087",
+      "name": "Acceptable Use Policy",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+      "date" : "29-10-2021"
+
+    },
+    {
+      "id": "1088",
+      "name": "Cookie Policy",
+      "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. ",
+      "date" : "23-10-2020"
+    },
+    {
+      "id": "1089",
+      "name": "Copyright Infringement Notice and Takedown Policy",
+      "desc": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.",
+      "date" : "10.02.2021"
+    },
+    {
+      "id": "1090",
+      "name": "Privacy Policy",
+      "desc": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+      "date" : "11.06.2021"
+    }
+  ]
+}

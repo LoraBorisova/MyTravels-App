@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_10"
+    tools:context=".ListViewImage">
+
+
+    <TextView android:id="@+id/header"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="@string/you_can_now_listen_to_music_while_browsing"
+        android:textSize="23sp"/>
+
+    <Button
+        android:id="@+id/playMusic"
+        android:layout_width="@dimen/padding_30"
+        android:layout_height="@dimen/padding_30"
+        android:layout_below="@+id/header"
+        android:background="@drawable/ic_start"/>
+
+    <ListView
+        android:id="@+id/ListView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/playMusic"
+        android:layout_marginTop="@dimen/padding_10" />
+</RelativeLayout>

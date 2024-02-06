@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/padding_10"
+    tools:context=".ProfileActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/form_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/image1"
+                android:layout_height="250dp"
+                android:src="@drawable/ic_travel1"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/padding_10"/>
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_below="@+id/image1"
+                android:layout_width="wrap_content"
+                android:paddingBottom="@dimen/padding_10"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:text="@string/your_username"/>
+
+            <TextView
+                android:id="@+id/usernameProfile"
+                android:layout_width="wrap_content"
+                android:paddingBottom="@dimen/padding_10"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/text_size_20"
+                android:text="jaefeiikejife"/>
+
+            <TextView
+                android:id="@+id/info1"
+                android:textSize="@dimen/text_size_20"
+                android:paddingBottom="@dimen/padding_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/usernameProfile"
+                android:layout_centerInParent="true"
+                android:text="@string/your_password"/>
+
+            <TextView
+                android:id="@+id/passProfile"
+                android:textSize="@dimen/text_size_20"
+                android:paddingBottom="@dimen/padding_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info1"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                android:text="@string/empty"/>
+
+            <Button
+                android:id="@+id/seePass"
+                android:layout_width="31dp"
+                android:layout_height="28dp"
+                android:layout_below="@+id/passProfile"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_eye" />
+
+            <Button
+                android:id="@+id/btnLogOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/log_out"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/padding_50"
+                android:layout_below="@+id/seePass"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
